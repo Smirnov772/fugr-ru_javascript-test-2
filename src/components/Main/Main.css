@@ -1,0 +1,42 @@
+.search {
+  background-image: url(../../images/2785812.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+.books {
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  grid-gap: 75px;
+  justify-content: center;
+  margin: 40px auto;
+}
+.found-result {
+  font-size: 20px;
+  text-align: center;
+}
+.books__button {
+  width: 100px;
+  height: 34px;
+  border: none;
+  background: #f9f6f6;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+.search-result {
+  margin: 20px 0;
+  text-align: center;
+}
+@media screen and (max-width: 968px) {
+  .books {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+  }
+}

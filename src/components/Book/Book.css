@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    background: #f9f6f6;
+    max-width: 400px;
+    flex-direction: column;
+    align-content: flex-start;
+
+}
+.card__image {
+    margin: 40px;
+    box-shadow: 18px 13px 14px 0px rgb(96 96 96 / 82%);
+}
+.card__container {
+    text-align: start;
+    margin-left: 35px;
+}
+.card__category {
+    color: #a0a0a0;
+    text-decoration: underline;
+    margin-top: 0;
+}
+.card__title {
+}
+.card__author {
+    color: #a0a0a0;
+}
