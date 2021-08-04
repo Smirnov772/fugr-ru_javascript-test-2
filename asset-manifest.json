@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/fugr-ru_javascript-test-2/static/css/main.74a62dc8.chunk.css",
-    "main.js": "/fugr-ru_javascript-test-2/static/js/main.92093f40.chunk.js",
-    "main.js.map": "/fugr-ru_javascript-test-2/static/js/main.92093f40.chunk.js.map",
-    "runtime-main.js": "/fugr-ru_javascript-test-2/static/js/runtime-main.124842ad.js",
-    "runtime-main.js.map": "/fugr-ru_javascript-test-2/static/js/runtime-main.124842ad.js.map",
-    "static/js/2.fb956583.chunk.js": "/fugr-ru_javascript-test-2/static/js/2.fb956583.chunk.js",
-    "static/js/2.fb956583.chunk.js.map": "/fugr-ru_javascript-test-2/static/js/2.fb956583.chunk.js.map",
-    "static/js/3.c3cf685f.chunk.js": "/fugr-ru_javascript-test-2/static/js/3.c3cf685f.chunk.js",
-    "static/js/3.c3cf685f.chunk.js.map": "/fugr-ru_javascript-test-2/static/js/3.c3cf685f.chunk.js.map",
-    "index.html": "/fugr-ru_javascript-test-2/index.html",
-    "static/css/main.74a62dc8.chunk.css.map": "/fugr-ru_javascript-test-2/static/css/main.74a62dc8.chunk.css.map",
-    "static/js/2.fb956583.chunk.js.LICENSE.txt": "/fugr-ru_javascript-test-2/static/js/2.fb956583.chunk.js.LICENSE.txt",
-    "static/media/Main.css": "/fugr-ru_javascript-test-2/static/media/2785812.dff7670c.jpg",
-    "static/media/SectionWithForm.css": "/fugr-ru_javascript-test-2/static/media/icon-search.99b6633d.svg"
+    "main.css": "/static/css/main.c82da32a.chunk.css",
+    "main.js": "/static/js/main.92093f40.chunk.js",
+    "main.js.map": "/static/js/main.92093f40.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d88d1dff.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d88d1dff.js.map",
+    "static/js/2.fb956583.chunk.js": "/static/js/2.fb956583.chunk.js",
+    "static/js/2.fb956583.chunk.js.map": "/static/js/2.fb956583.chunk.js.map",
+    "static/js/3.c3cf685f.chunk.js": "/static/js/3.c3cf685f.chunk.js",
+    "static/js/3.c3cf685f.chunk.js.map": "/static/js/3.c3cf685f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c82da32a.chunk.css.map": "/static/css/main.c82da32a.chunk.css.map",
+    "static/js/2.fb956583.chunk.js.LICENSE.txt": "/static/js/2.fb956583.chunk.js.LICENSE.txt",
+    "static/media/Main.css": "/static/media/2785812.dff7670c.jpg",
+    "static/media/SectionWithForm.css": "/static/media/icon-search.99b6633d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.124842ad.js",
+    "static/js/runtime-main.d88d1dff.js",
     "static/js/2.fb956583.chunk.js",
-    "static/css/main.74a62dc8.chunk.css",
+    "static/css/main.c82da32a.chunk.css",
     "static/js/main.92093f40.chunk.js"
   ]
 }
