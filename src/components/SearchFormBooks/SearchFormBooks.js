@@ -2,7 +2,7 @@ import React from "react";
 import SectionWithForm from "../SectionWithForm/SectionWithForm";
 function SearchFormBooks(props) {
   const [input, setInput] = React.useState("");
-  const [categories, setCategories] = React.useState("all");
+  const [categories, setCategories] = React.useState([]);
   const [sorting, setSorting] = React.useState("relevance");
   console.log("input", input);
   console.log("categories", categories);
@@ -29,8 +29,7 @@ function SearchFormBooks(props) {
   return (
     <SectionWithForm title="Search for books" onSubmit={handleSubmit}>
       <div className="forms__input-container">
-        <input 
- 
+        <input
           type="text"
           onChange={handleInput}
           className="forms__input"
@@ -42,21 +41,22 @@ function SearchFormBooks(props) {
           Categories
           <select className="forms__select" onChange={handleCategories}>
             <option label="all" value=""></option>
-            <option>art</option>
-            <option>biography</option>
-            <option>computers</option>
-            <option>history</option>
-            <option>medical</option>
-            <option>poetry</option>
-          </select></p>
-        
+            <option label="art" value="+subject:art"></option>
+            <option label="biography" value="+subject:biography"></option>
+            <option label="computers" value="+subject:computers"></option>
+            <option label="history" value="+subject:history"></option>
+            <option label="medical" value="+subject:medical"></option>
+            <option label="poetry" value="+subject:poetry"></option>
+          </select>
+        </p>
+
         <p className="forms__paragraph">
           Sorting by
           <select className="forms__select" onChange={handleSorting}>
             <option>relevance</option>
             <option>newest</option>
-          </select></p>
-        
+          </select>
+        </p>
       </div>
     </SectionWithForm>
   );

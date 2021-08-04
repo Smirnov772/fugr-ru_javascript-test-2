@@ -10,7 +10,8 @@ class Api {
     this._url = url;
   }
   getAllCards(params, cardLenght) {
-    return fetch(`${this._url}?q=${params.input}+subject:${params.categories}&orderBy=${params.sorting}&startIndex=${cardLenght}&maxResults=30&key=AIzaSyAbe9iw6fJbZ0hHutVp3sLrfV20kvtIiaQ`, {
+
+    return fetch(`${this._url}?q=intitle:${params.input}${params.categories}&orderBy=${params.sorting}&startIndex=${cardLenght}&maxResults=30&key=AIzaSyAbe9iw6fJbZ0hHutVp3sLrfV20kvtIiaQ`, {
       method: "GET",
       params: "", 
     }).then(onError);

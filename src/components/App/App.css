@@ -1,5 +1,9 @@
 button:hover {
-    opacity: 0.5;
-    transition: 0.3s;
-    cursor: pointer;
-  }
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

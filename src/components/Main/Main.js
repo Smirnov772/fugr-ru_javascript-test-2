@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { Route, Switch } from "react-router-dom";
+
 import SearchFormBooks from "../SearchFormBooks/SearchFormBooks";
-import Book from "../Book/Book";
+
 import BookInfo from "../BookInfo/BookInfo";
+import SearchResult from "../SearchResult/SearchResult";
 import api from "../../utils/api";
 import "./Main.css";
 
@@ -9,19 +12,19 @@ function Main() {
   const [cards, setCards] = useState([]);
   const [params, setParams] = useState([]);
   const [result, setResult] = useState("");
-  
+
   console.log(cards);
   console.log(params);
   function clickMoreButton() {
     api
       .getAllCards(params, cards.length)
       .then((dataCard) => {
-        setCards([...cards, ...dataCard.items])})
+        setCards([...cards, ...dataCard.items]);
+      })
       .catch((err) => console.log(err));
   }
 
   function onSearch(params) {
-
     setParams(params);
     api
       .getAllCards(params, 0)
@@ -31,36 +34,27 @@ function Main() {
       })
       .catch((err) => console.log(err));
   }
+  function handleClick() {}
 
   return (
-    <main className="content">
-      <section className="search">
+  
+      <Route>
         <SearchFormBooks onSearch={onSearch}></SearchFormBooks>
-      </section>
-
-      <section className="search-result">
-        <p className="found-result">Found {result > 0 ? result : 0} result</p>
-        <div className="books">
-          {cards.map((item) => (
-            <Book
-              key={item.id}
-              thumbnail={
-                item.volumeInfo.readingModes.image
-                  ? item.volumeInfo.imageLinks.thumbnail
-                  : "http://s003.radikal.ru/i202/1405/45/86a3a577fba4.png"
-              }
-              category={item.volumeInfo.categories}
-              authors={item.volumeInfo.authors}
-              title={item.volumeInfo.title}
-            />
-          ))}
-        </div>
-        <button onClick={clickMoreButton} className="books__button">
-          load more
-        </button>
-      </section>
-      <BookInfo></BookInfo>
-    </main>
+        <Switch>
+          <Route exact path="/fugr-ru_javascript-test-2/">
+            <SearchResult
+              cards={cards}
+              result={result}
+              clickMoreButton={clickMoreButton}
+              handleClick={handleClick}
+            ></SearchResult>
+          </Route>
+          <Route path="/book-info">
+            <BookInfo></BookInfo>
+          </Route>
+        </Switch>
+      </Route>
+  
   );
 }
 
